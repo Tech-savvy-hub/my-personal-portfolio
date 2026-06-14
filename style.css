@@ -36,14 +36,15 @@ section {
     border-bottom: 3px solid #34495e; 
 }
 
-.nav-logo {
-    color: #ffffff;
-    font-size: 1.3rem;
+.fa-solid {
+    color: #fffffff8;
+    font-size: 40px;
     font-weight: bold;
 }
 
 .nav-links {
     display: flex;
+    flex-direction: row;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -56,7 +57,7 @@ section {
 .nav-links a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 18px;
     transition: color 0.3s ease; /* Smooth transition for hover */
 }
 
@@ -224,4 +225,74 @@ section {
 
 .footer-socials a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 900px){
+    .navbar{
+        padding: 0 20px;
+    }
+
+    .profile-img{
+        width: 240px;
+        height: 220px;
+    }
+    .projects-container{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .project-card{
+        flex: none;
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .tagline{ 
+        font-size: 1.1rem;
+    }
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .nav-links {
+        flex-direction: column;
+    }
+    .nav-links li {
+       padding-top: 20px;
+       justify-content: center;
+    }
+    .header-section{
+        padding-top: 300px;
+    }
+
+    .about-container{ 
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .profile-img{
+        width: 180px;
+        height: 180px;
+    }
+
+    .project-card{
+        width: 100%;
+    }
+
+   /*  .projects-container{
+        flex-direction: column;
+    } */
+
+    section{
+        padding: 40px 15px;
+    }
 }
